@@ -1,24 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 
+import NameCard from './components/Name';
+
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <NameCard firstname="John" lastname="Smith" age={ 8 } hair="Brown" /> 
+     <NameCard firstname="Joe" lastname="Lee" age={ 28 } hair="Blonde" /> 
+     <NameCard firstname="Jim" lastname="Nance" age={ 56 } hair="Brown" /> 
+     <NameCard firstname="Rick" lastname="Sanchez" age={ 10000 } hair="Brown" /> 
     </div>
+    
   );
 }
 
